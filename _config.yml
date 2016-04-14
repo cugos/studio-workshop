@@ -1,0 +1,6 @@
+baseurl: /cugos
+permalink: pretty
+markdown: kramdown
+repo: studio-workshop
+github_org: cugos
+future: true
