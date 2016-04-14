@@ -29,6 +29,8 @@ h2 {
   font-family: 'Lato', sans-serif;
 }
 
+h3  {font-weight: bold;}
+
 .button {
   background:#2babe2;
   color:#fff;
@@ -58,7 +60,7 @@ h2 {
     top:2px;
     box-shadow:none;
     }
-
+.button a {color: #fff;}
 .round { border-radius:4px; }
 .dark { color:#fff; }
 .strong { font-weight:bold; }
