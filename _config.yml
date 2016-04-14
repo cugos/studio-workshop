@@ -1,4 +1,4 @@
-baseurl: /cugos
+baseurl: /
 permalink: pretty
 markdown: kramdown
 repo: studio-workshop
