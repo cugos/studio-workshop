@@ -1,2 +1,4 @@
-# studio-workshop
-Mapbox Studio workshop, Spring Fling, 2016
+# Mapbox Studio Workshop
+Spring Fling, 2016
+
+
