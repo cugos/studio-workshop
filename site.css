@@ -200,6 +200,7 @@ a.fill-darken0:hover  { background-color:rgba(0,0,0,0.15); }
     background:     -ms-linear-gradient(top, transparent, #fff);
     background:      -o-linear-gradient(top, transparent, #fff)
     }
+.header { background-image: url('assets/header.jpg');}
 
 @media only screen and (max-width:800px) {
   .sidebar, .content { width:50%; }
