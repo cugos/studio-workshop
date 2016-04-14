@@ -1,4 +1,5 @@
 baseurl: /studio-workshop
+mbbaseurl: https://www.mapbox.com/help
 permalink: pretty
 markdown: kramdown
 repo: studio-workshop
