@@ -6,26 +6,22 @@
   <meta charset='UTF-8'/>
   <title>{% if page.url == '/' %}{{site.maptime.chapter}}{% else %}{{site.maptime.chapter}} | {{page.title}}{% endif %}</title>
   <link rel='stylesheet' href='{{site.baseurl}}/site.css' type='text/css'/>
-  <link rel='shortcut icon' href='{{site.baseurl}}/img/favicon.png' type='image/x-icon' />
+  <link rel='shortcut icon' href='{{site.baseurl}}/assets/favicon.png' type='image/x-icon' />
   <!-- <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'> -->
 </head>
 <body>
 
-<div class='col12 strong dark fill-darken0 fill-green row8 truncate contain'>
-    <a href='{{site.baseurl}}/'>Spring Fling</a>
+<div class='col12 strong dark fill-darken0 fill-green row8 truncate contain header'>
+    <div class='pad4y pad4x'><h1><a href='{{site.baseurl}}/'>...</a></h1></div>
 </div>
 
-  <div class='limiter pad4y'>
+  <div class='limiter  pad4x'>
     <div class='col12 clearfix'>
-      <aside class='col3 fr space-bottom2 sidebar'>
-        <div class='fill-blue strong dark round pad2 space-bottom2'>
-          <h4>Next {{site.maptime.chapter}}:</h4>
-          <div id='rsvpdate'></div>
-        </div>
+      <aside class='col3 fr space-bottom2 sidebar pad4y'>
 
         <div class='hide-mobile'>
           <div class='popup-group'>
-            <a href='https://github.com/{{site.github_org}}/{{site.repo}}/' class='col12 space-bottom2 button'>Watch these events</a>
+            <a href='https://github.com/{{site.github_org}}/{{site.repo}}/' class='col12 space-bottom2 button'>Follow this guide.</a>
             <div class='popup popup-big keyline-all pad1 small round'>
               <ol class='space-bottom1'>
                 <li>1. Click the <strong>Watch these events</strong> button.</li>
@@ -33,7 +29,7 @@
                 <li>3. Click the <strong>Watch</strong> button on the repo.</li>
               </ol>
               <div class='center'>
-                <img src='{{site.baseurl}}/img/watchrepo.png' alt='Watch repo' />
+                <img src='{{site.baseurl}}/assets/watchrepo.png' alt='Watch repo' />
               </div>
             </div>
           </div>
@@ -62,22 +58,6 @@
 <script src='{{site.baseurl}}/js/jquery.min.js'></script>
 <script src='{{site.baseurl}}/js/underscore.min.js'></script>
 <script src='{{site.baseurl}}/site.js'></script>
-<script>
-  var rsvp = document.getElementById('rsvpdate');
-  var date,formatted,link;
-  '{% for item in site.categories.event limit:1 %}'
-    date = '{{item.date | date:"%Y,%-m,%-d"}}';
-    formatted = '{{item.date | date:"%A, %b %d %Y"}}';
-    link = '{{item.rsvp}}';
-  '{% endfor %}'
-
-  if (date && new Date().getTime() <= new Date(date).getTime() + (24 * 60 * 60 * 1000)) {
-    rsvp.innerHTML = '<h3>' + formatted + '</h3>' +
-    '<a class="button fill-orange block" href=' + link + '>RSVP</a>';
-  } else {
-    rsvp.innerHTML = '<h3>TBA</h3>';
-  }
-</script>
 
 </body>
 </html>
