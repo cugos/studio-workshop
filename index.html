@@ -1,7 +1,22 @@
----
-layout: default
----
-<div class='pad4y'>
+<!DOCTYPE html >
+<html>
+<head>
+  <meta charset='UTF-8'/>
+  <title></title>
+  <link rel='stylesheet' href='/studio-workshop/site.css' type='text/css'/>
+  <link rel='shortcut icon' href='/studio-workshop/assets/favicon.png' type='image/x-icon' />
+  <!-- <link href='https://fonts.googleapis.com/css?family=Lato:900' rel='stylesheet' type='text/css'> -->
+</head>
+<body>
+
+<div class='col12 strong dark fill-darken0 fill-green row8 truncate contain header'>
+    <div class='pad4y pad4x'><h1><a href='/studio-workshop/'>...</a></h1></div>
+</div>
+
+  <div class='limiter  pad4x'>
+    <div class='col12 clearfix'>
+      <div class='col12 margin2r prose content'>
+        <div class='pad4y'>
 	<h1 class='fancy'>Mapbox Studio Workshop</h1>
 	<p>Spring Fling, April 2016. Presenters: Rafa Gutierrez |  <a href="http://twitter.com/geografa/">@geografa</a> & Manny Lopez |  <a href="http://twitter.com/himannylopez/">@himannylopez</a></p>
 </div>
@@ -22,20 +37,20 @@ layout: default
 
 <h2>What we'll cover</h2>
 
-<h3><a href="{{site.baseurl}}/part-1">Part I - Mapbox Studio Basics</a></h3>
+<h3><a href="/studio-workshop/part-1">Part I - Mapbox Studio Basics</a></h3>
 <ul>
 	<li>the Mapbox platform</li>
 	<li>the studio interface and terms we'll use throughout (go through intro)</li>
 	<li>Mapbox data - OpenStreetMap, Imagery, Terrain</li>
 </ul>
 
-<h3><a href="{{site.baseurl}}/part-2">Part II - The Mapbox Studio Editor</a></h3>
+<h3><a href="/studio-workshop/part-2">Part II - The Mapbox Studio Editor</a></h3>
 <ul>
 	<li>creating a basic style from a template</li>
 	<li>Publishing and sharing your style</li>
 </ul>
 
-<h3><a href="{{site.baseurl}}/part-3">Part III - Managing your account & custom data</a></h3>
+<h3><a href="/studio-workshop/part-3">Part III - Managing your account & custom data</a></h3>
 <ul>
 	<li>uploading a tileset</li>
 	<li>managing data</li>
@@ -46,18 +61,43 @@ layout: default
 <!-- Part III - Managing your account & custom data -->
 <h3>Part IV - Advanced styling</h3>
 <ul>
-	<li>filters</li>
-	<li>styles by zoom level </li>
-	<li>fonts</li>
-	<li>sprites</li>
-	<li>debugging - collision boxes, satellite imagery, tile boundaries</li>
-	<li>history</li>
+	<li>Style a background layer</li>
+	<li>Style a circle layer</li>
+	<li>Style a fill layer</li>
+	<li>Style a line layer</li>
+	<li>Style a symbol layer</li>
+	<li>Add custom fonts</li>
+	<li>Manage your fontstacks for optimal map rendering</li>
+	<li>Change your map's label language</li>
+	<li>Filters</li>
+	<li>Styles by zoom level </li>
+	<li>Sprites</li>
+	<li>Debugging - collision boxes, satellite imagery, tile boundaries</li>
+	<li>History</li>
 </ul>
 
 <h3>Part V - Final notes</h3>
 <ul>
+	<li>Managing your account</li>
 	<li>Getting help</li>
 	<li>GL JS</li>
 	<li>Mobile Apps</li>
 	<li>API</li>
 </ul>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class='fill-light pad2y'>
+    <div class='limiter center small quiet'>
+      <p>This website is <a href='http://github.com/cugos/studio-workshop/'>open source</a> and you can improve it. Learn more about contributing <a href='https://guides.github.com/activities/forking/'>here</a>.</p>
+   </div>
+  </footer>
+
+<script src='/studio-workshop/js/jquery.min.js'></script>
+<script src='/studio-workshop/js/underscore.min.js'></script>
+<script src='/studio-workshop/site.js'></script>
+
+</body>
+</html>
